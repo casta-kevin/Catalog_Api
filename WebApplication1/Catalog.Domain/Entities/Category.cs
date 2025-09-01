@@ -17,7 +17,7 @@ namespace Catalog.Domain.Entities
         public bool IsActive { get; set; } = true;
 
         [Required]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; } 
 
         // Navigation property
         public ICollection<Category>? SubCategories { get; set; }
